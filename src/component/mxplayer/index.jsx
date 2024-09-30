@@ -17,7 +17,6 @@ const MxPlayer = () => {
     }
     const handleIncreaseSpeed = () => {
         if (videoRef.current) {
-
             fastForwardInterval.current = setInterval(() => { videoRef.current.currentTime += 1 }, 100)
         }
     }

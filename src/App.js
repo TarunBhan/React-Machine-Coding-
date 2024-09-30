@@ -13,6 +13,8 @@ import Password from "./component/password/password";
 import StarComponent from "./component/Star";
 import MxPlayer from "./component/mxplayer";
 import Form from "./component/form/input";
+import List from "./component/DragDropList";
+import DragDrop from "../src/component/DragDrop/index";
 
 function App() {
   return (
@@ -24,13 +26,15 @@ function App() {
         <Route path="/practice" element={<Practice />}></Route>
         <Route path="/round2" element={<BoxWidget />}></Route>
         <Route path="/otp" element={<OtpInput />}></Route>
-        <Route path="/accordian" element={<Accordian />}></Route>comment
+        <Route path="/accordian" element={<Accordian />}></Route>
         <Route path="/comment" element={<Comment />}></Route>
         <Route path="/todo" element={<Todo />}></Route>
         <Route path="/password" element={<Password />}></Route>
         <Route path="/star" element={<StarComponent />}></Route>
         <Route path="/video" element={<MxPlayer />}></Route>
         <Route path="/form" element={<Form />}></Route>
+        <Route path="/todolist" element={<List />}></Route>
+        <Route path="/dragdrop" element={<DragDrop />}></Route>
       </Routes>
     </BrowserRouter>
   );
